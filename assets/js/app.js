@@ -16,20 +16,24 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
     document.addEventListener('scroll', navChange);
-    // ScrollReveal().reveal('.about-info', {
-    //     delay: 400,
-    //     distance: '600px',
-    //     origin: 'left'
+    ScrollReveal().reveal('.about-info', {
+        delay: 300,
+        distance: '400px',
+        origin: 'left'
 
-    // });
+    });
     // ScrollReveal().reveal('.web-page', {
-    //     delay: 400,
-    //     distance: '600px',
+    //     delay: 300,
+    //     distance: '400px',
     //     origin: 'right'
 
     // });
 
-
+    ScrollReveal().reveal(".consulting-info", {
+      delay: 300,
+      distance: "600px",
+      origin: "bottom"
+    });
 
 
 })

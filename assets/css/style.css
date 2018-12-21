@@ -11,7 +11,7 @@ body{
 background: #0f0c29;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to left, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to left, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
- 
+ overflow-x: hidden;
 }
 /* NAV BAR STYLES */
 .navbar{
@@ -31,12 +31,17 @@ background: linear-gradient(to left, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/
 }
 .title{
     padding-left: 25px;
+    width: 100%;
 }
 
 
 
 .nav-list{
     margin-left: auto;
+    width: 100%;
+    text-align: right;
+    margin-right: 120px;
+    
 }
 .nav-list li{
     display: inline-block;
@@ -53,7 +58,15 @@ background: linear-gradient(to left, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/
     width: 95px;
     height: 25px;
     border-radius: 10px;
+    margin-top: -5px;
+    font-size: .9rem;
+    
 }
+.last{
+    position: absolute;
+    right: 10px;
+}
+
 a{
     text-decoration: none;
     color: white;
@@ -261,13 +274,17 @@ textarea{
         
     }
     .nav-list{
-    margin: auto;
+    text-align: center;
+    margin-right: 5px;
     }
     .landing-page{
         font-size: .9rem;
     }
     .secondary-txt{
     text-align: center;
+    }
+    .last{
+        right: 0px;
     }
 
 }
