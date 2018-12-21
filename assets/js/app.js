@@ -16,13 +16,18 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
     document.addEventListener('scroll', navChange);
-    ScrollReveal().reveal('.about-info', {
-        delay: 400,
-        distance: '600px',
-        origin: 'left'
+    // ScrollReveal().reveal('.about-info', {
+    //     delay: 400,
+    //     distance: '600px',
+    //     origin: 'left'
 
-    });
+    // });
+    // ScrollReveal().reveal('.web-page', {
+    //     delay: 400,
+    //     distance: '600px',
+    //     origin: 'right'
 
+    // });
 
 
 

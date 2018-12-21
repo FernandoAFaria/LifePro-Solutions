@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <title>LifePro Solutions</title>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
@@ -17,27 +18,66 @@
         <div class='title'>LifePro Solutions</div>
         <ul class='nav-list'>
             <li>Home</li>
-            <li>About</li>
+            
             <li>Services</li>
-            <li><button class='contact-btn'>Contact Us</button></li>
+            <li><button class='contact-btn'><a href="#contact">Contact Us</a></button></li>
         </ul>
     </nav>
     <section class='landing-page'>
         <div>
-        <h1>IT Consulting, Websites, and Healthcare training programs</h1>
+        <h1>Affordable IT Consulting, Healthcare Traning, and more!</h1>
         <h3 class='secondary-txt'>What can we do to help?</h3>
         </div>
     </section>
     <section class='about-page'>
         <div class='about-info'> 
-            <h2>Certified CPR Training</h2>
-            Expert training. OSHA compliant. If you need CPR training to satisfy an OSHA-mandated job requirement LifePro has the answers to all your needs.
+            <h2>OSHA Compliant, Certified CPR Training</h2>
+            Expert training. If you need CPR training to satisfy an OSHA-mandated job requirement,  LifePro has the answers to all your needs.
         Our World-Class instructor has many years of real world exposure and training.  Contact us for more information</p>
-            <buttom class='about-btn'>Learn More</buttom>
+           
     </div>
     </section>
 
-<script src="./assets/js/app.js"></script>
+    <section class='web-page'>
+        <div class='web-info'>
+            <h2>Custom SEO Websites to Maximize your ROI</h2>
+            SEO stands for Search Engine Optimized.  
+            Every day, customers are searching for new products and services.  We create customized online strageties for each one of our unique clients.  Lets make sure your buisness has a footprint on the web!</p>
+            
+        </div>
+    </section>
+        <section class='consulting-page'>
+            <div class='consulting-info'>
+                <h2>IT Consulting</h2>
+               Let us find the right solutions for your buisness.  Databases for data storage, server solutions, IT Security, data backup and recover.  We do it all.  Reach out and let one of our IT specialists evaluate your needs.</p>
+        
+            </div>
+        </section>
+        <footer class='contact-us' id='contact'>
+            <div class='overlay'></div>
+            <div class='modal'>
+                <div class='contact-card-header'>
+                    <div class='overlay-header'></div>
+                    <h1>Contact Us</h1>
+                   
+                </div>
 
+            <div class='contact-body'>
+                <form>
+                    <input type="text" name="name" id="name" placeholder="Full Name">
+                    <input type="email" name="email" id="email" placeholder="Email Address">
+                    <input type="tel" name="tel" id="tel" placeholder="Eg. +1 800 0000000">
+                    <textarea rows="10" cols="50" placeholder="Your comments...."></textarea>
+                    <input id='submit-btn' type="submit">
+                </form>
+            </div>
+            </div>
+            
+        </footer>
+    
+
+
+
+<script src="./assets/js/app.js"></script>
 </body>
 </html>
