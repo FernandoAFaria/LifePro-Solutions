@@ -1,21 +1,10 @@
 document.addEventListener('DOMContentLoaded', function(){
+
     let navbar = document.getElementById('navbar');
-    function navChange(){
-        if(window.scrollY > 25){
-            navbar.style.background = 'black';
-            navbar.style.color = "lightgrey";
-        }
-        if (window.scrollY < 25) {
-            navbar.style.background = 'transparent';
-            navbar.style.color = "white";
-        }
-    }
+    let navlinks = document.getElementsByClassName('hover');
 
 
-
-
-
-    document.addEventListener('scroll', navChange);
+    
     ScrollReveal().reveal('.about-info', {
         delay: 600,
         distance: '400px',
@@ -29,11 +18,11 @@ document.addEventListener('DOMContentLoaded', function(){
 
     });
 
-    // ScrollReveal().reveal(".consulting-info", {
-    //   delay: 500,
-    //   distance: "600px",
-    //   origin: "bottom"
-    // });
+    ScrollReveal().reveal(".consulting-info", {
+      delay: 500,
+      distance: "600px",
+      origin: "bottom"
+    });
 
 
 })
