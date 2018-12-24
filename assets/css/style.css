@@ -14,7 +14,7 @@ body{
     /* background: #1488CC;  /* fallback for old browsers */
     /* background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  Chrome 10-25, Safari 5.1-6 */
     /* background: linear-gradient(to right, #2B32B2, #1488CC); */ 
-    background: rgb(19, 20, 58);
+    background: black;
     overflow-x: hidden;
     width: 100vw;
     transition: background 1s;
@@ -223,6 +223,190 @@ a{
     align-self: flex-end;
     padding: 75px 100px;
 }
+
+.terms{
+    position: relative;
+    bottom: 0;
+    width: 100vw;
+    height: 65px;
+    background: rgb(48, 48, 48);
+    z-index: 99;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 25px;
+}
+#modal-btn{
+    width: 120px;
+    height: 25px;
+    background: pink;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.visible{
+    display: none;
+}
+.terms-modal{
+    
+    position: fixed;
+    width: 70vw;
+    height: 90vh;
+    top: 25px;
+    left: 15vw;
+    background: white;
+    padding: 25px 50px;
+    overflow-y: scroll;
+    z-index: 99;
+}
+
+/* Team member section */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+
+
+.slider {
+    
+  height: 80%;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.slider__nav {
+  width: 12px;
+  height: 12px;
+  margin: 2rem 12px;
+  
+  border-radius: 50%;
+  z-index: 10;
+  outline: 6px solid #ccc;
+  outline-offset: -6px;
+  box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.slider__nav:checked {
+  -webkit-animation: check 0.4s linear forwards;
+          animation: check 0.4s linear forwards;
+}
+.slider__nav:checked:nth-of-type(1) ~ .slider__inner {
+  left: 0%;
+}
+.slider__nav:checked:nth-of-type(2) ~ .slider__inner {
+  left: -100%;
+}
+.slider__nav:checked:nth-of-type(3) ~ .slider__inner {
+  left: -200%;
+}
+.slider__nav:checked:nth-of-type(4) ~ .slider__inner {
+  left: -300%;
+}
+.slider__inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400%;
+  height: 100%;
+  -webkit-transition: left 0.4s;
+  transition: left 0.4s;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+          color: white;
+}
+.slider__contents {
+  height: 100%;
+  padding: 2rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.slider__image {
+  font-size: 2.7rem;
+      color: #2196F3;
+}
+.slider__caption {
+  font-weight: 500;
+  margin: 2rem 0 1rem;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+}
+.slider__txt {
+  color: #999;
+  margin-bottom: 3rem;
+  max-width: 300px;
+  font-style: italic;
+}
+
+@-webkit-keyframes check {
+  50% {
+    outline-color: #333;
+    box-shadow: 0 0 0 12px #333, 0 0 0 36px rgba(51, 51, 51, 0.2);
+  }
+  100% {
+    outline-color: #333;
+    box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+  }
+}
+
+@keyframes check {
+  50% {
+    outline-color: #333;
+    box-shadow: 0 0 0 12px #333, 0 0 0 36px rgba(51, 51, 51, 0.2);
+  }
+  100% {
+    outline-color: #333;
+    box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+  }
+}
+/*END TESTIMONIAL */
+
+.team{
+    height: 480px;
+    background: rgb(0, 0, 0);
+    padding: 20px;
+    
+ 
+}
 .contact-us{
     height: 840px;
     /* padding: 50px 0; */
@@ -274,7 +458,7 @@ a{
 .modal{
     position: relative;
     z-index: 2;
-    width: 50vw;
+    width: 70vw;
     height: 720px;
     background: white;
     border-radius: 10px;
@@ -290,10 +474,23 @@ a{
     align-items: auto;
     justify-content: center;
     width: 100%;
-    padding: 25px 50px;
+    padding: 25px 20px;
+}
+.left{
+    flex-basis: 60%;
+}
+.right{
+    flex-basis: 40%;
+    text-align: left;
+    line-height: 1.4;
+    font-size: 1.2rem;
+}
+.right p{
+    margin: 25px 0;
+    font-size: .9rem;
 }
 input{
-    width: 80%;
+    width: 90%;
     height: 55px;
     border: 1px solid lightgrey;
     padding: 0 45px;
@@ -302,8 +499,9 @@ input{
    
 
 }
+
 textarea{
-    width: 80%;
+    width: 90%;
     border: 1px solid lightgrey;
     border-radius: 5px;
     padding: 15px 45px;
@@ -328,6 +526,7 @@ textarea{
         font-size: .8rem;
         
     }
+
     .nav-list{
     text-align: center;
     margin-right: 5px;
@@ -341,9 +540,8 @@ textarea{
     .last{
         right: 0px;
     }
-    .modal{
-        width: 90vw;
-    }
+
+   
     input{
         width: 98%;
     }
@@ -381,4 +579,7 @@ textarea{
     .modal{
         width: 80vw;
     }
+  .right{
+      font-size: .8rem;
+  }
 }
